@@ -13,6 +13,8 @@
 		F30856AC25F1BFC60031C393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30856AB25F1BFC60031C393 /* Preview Assets.xcassets */; };
 		F30856B725F1BFC60031C393 /* HelloSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856B625F1BFC60031C393 /* HelloSwiftUITests.swift */; };
 		F30856C225F1BFC60031C393 /* HelloSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856C125F1BFC60031C393 /* HelloSwiftUIUITests.swift */; };
+		F33F759425F2B4D80032CA0D /* Array+Chucnked.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F759325F2B4D80032CA0D /* Array+Chucnked.swift */; };
+		F33F759D25F2C1140032CA0D /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F759C25F2C1140032CA0D /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		F30856BD25F1BFC60031C393 /* HelloSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30856C125F1BFC60031C393 /* HelloSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F30856C325F1BFC60031C393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33F759325F2B4D80032CA0D /* Array+Chucnked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Chucnked.swift"; sourceTree = "<group>"; };
+		F33F759C25F2C1140032CA0D /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		F30856A325F1BFC30031C393 /* HelloSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F33F759B25F2C1020032CA0D /* Model */,
+				F33F759125F2B4B10032CA0D /* Helper */,
 				F30856A425F1BFC30031C393 /* HelloSwiftUIApp.swift */,
 				F30856A625F1BFC30031C393 /* ContentView.swift */,
 				F30856A825F1BFC60031C393 /* Assets.xcassets */,
@@ -128,6 +134,30 @@
 				F30856C325F1BFC60031C393 /* Info.plist */,
 			);
 			path = HelloSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		F33F759125F2B4B10032CA0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F33F759225F2B4B80032CA0D /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F33F759225F2B4B80032CA0D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F33F759325F2B4D80032CA0D /* Array+Chucnked.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F33F759B25F2C1020032CA0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F33F759C25F2C1140032CA0D /* Dish.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33F759425F2B4D80032CA0D /* Array+Chucnked.swift in Sources */,
+				F33F759D25F2C1140032CA0D /* Dish.swift in Sources */,
 				F30856A725F1BFC30031C393 /* ContentView.swift in Sources */,
 				F30856A525F1BFC30031C393 /* HelloSwiftUIApp.swift in Sources */,
 			);
