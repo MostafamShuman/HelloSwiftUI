@@ -13,6 +13,9 @@
 		F30856AC25F1BFC60031C393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30856AB25F1BFC60031C393 /* Preview Assets.xcassets */; };
 		F30856B725F1BFC60031C393 /* HelloSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856B625F1BFC60031C393 /* HelloSwiftUITests.swift */; };
 		F30856C225F1BFC60031C393 /* HelloSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856C125F1BFC60031C393 /* HelloSwiftUIUITests.swift */; };
+		F30856D725F1C1680031C393 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856D625F1C1680031C393 /* ContactsModel.swift */; };
+		F33F756A25F2755E0032CA0D /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F756925F2755E0032CA0D /* ContactCellView.swift */; };
+		F33F757425F276270032CA0D /* ContactViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F757325F276270032CA0D /* ContactViewDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		F30856BD25F1BFC60031C393 /* HelloSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30856C125F1BFC60031C393 /* HelloSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F30856C325F1BFC60031C393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30856D625F1C1680031C393 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		F33F756925F2755E0032CA0D /* ContactCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
+		F33F757325F276270032CA0D /* ContactViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 		F30856A325F1BFC30031C393 /* HelloSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F33F757125F276080032CA0D /* Scens */,
+				F33F756825F2754D0032CA0D /* Cells */,
+				F30856D225F1C1430031C393 /* Model */,
 				F30856A425F1BFC30031C393 /* HelloSwiftUIApp.swift */,
 				F30856A625F1BFC30031C393 /* ContentView.swift */,
 				F30856A825F1BFC60031C393 /* Assets.xcassets */,
@@ -128,6 +137,38 @@
 				F30856C325F1BFC60031C393 /* Info.plist */,
 			);
 			path = HelloSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		F30856D225F1C1430031C393 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F30856D625F1C1680031C393 /* ContactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F33F756825F2754D0032CA0D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F33F756925F2755E0032CA0D /* ContactCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F33F757125F276080032CA0D /* Scens */ = {
+			isa = PBXGroup;
+			children = (
+				F33F757225F2760F0032CA0D /* ContactDetail */,
+			);
+			path = Scens;
+			sourceTree = "<group>";
+		};
+		F33F757225F2760F0032CA0D /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F33F757325F276270032CA0D /* ContactViewDetail.swift */,
+			);
+			path = ContactDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30856A725F1BFC30031C393 /* ContentView.swift in Sources */,
+				F30856D725F1C1680031C393 /* ContactsModel.swift in Sources */,
 				F30856A525F1BFC30031C393 /* HelloSwiftUIApp.swift in Sources */,
+				F33F756A25F2755E0032CA0D /* ContactCellView.swift in Sources */,
+				F33F757425F276270032CA0D /* ContactViewDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

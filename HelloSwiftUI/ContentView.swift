@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+  let contacts = Contact.contacts
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+      NavigationView {
+        List(contacts, id: \.mobileNumber ) { contact in
+          NavigationLink(
+            destination: ContactViewDetail(contact: contact)) {
+            ContactViewCell(contact: contact)
+          }
+          
+        }
+        .navigationBarTitle("Contacts")
+      }
     }
 }
 
@@ -19,3 +28,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
