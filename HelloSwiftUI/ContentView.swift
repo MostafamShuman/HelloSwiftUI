@@ -8,23 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-  let dishes = Dish.dishes.chunck(into: 1)
+  let dishes = Dish.dishes
+  @State var isSpicy = false
     var body: some View {
       List {
-        ForEach(0..<dishes.count) { index in
+        Toggle(isOn: $isSpicy) {
+          Text("Spicy 🔥")
+        }
+        ForEach(dishes.filter{ $0.isSpicy == self.isSpicy}) {dish in
           HStack {
-            ForEach(dishes[index]) { dish in
-              VStack {
-                Image(dish.image)
-                  .resizable()
-                  .scaledToFit()
-                Text(dish.name)
-                  .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                  .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                  .padding()
-              }
-              
+            Image(dish.image)
+              .resizable()
+              .frame(width: 100, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Text(dish.name)
+              .lineLimit(1)
+            if dish.isSpicy {
+              Image("icon_spicy")
+                .resizable()
+                .frame(width: 35, height: 35, alignment: .trailing)
             }
+            
           }
         }
       }
