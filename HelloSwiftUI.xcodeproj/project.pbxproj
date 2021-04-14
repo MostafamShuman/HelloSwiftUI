@@ -13,6 +13,7 @@
 		F30856AC25F1BFC60031C393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30856AB25F1BFC60031C393 /* Preview Assets.xcassets */; };
 		F30856B725F1BFC60031C393 /* HelloSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856B625F1BFC60031C393 /* HelloSwiftUITests.swift */; };
 		F30856C225F1BFC60031C393 /* HelloSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30856C125F1BFC60031C393 /* HelloSwiftUIUITests.swift */; };
+		F34182C62627200C00C02292 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34182C52627200C00C02292 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F30856BD25F1BFC60031C393 /* HelloSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30856C125F1BFC60031C393 /* HelloSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F30856C325F1BFC60031C393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34182C52627200C00C02292 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				F30856A825F1BFC60031C393 /* Assets.xcassets */,
 				F30856AD25F1BFC60031C393 /* Info.plist */,
 				F30856AA25F1BFC60031C393 /* Preview Content */,
+				F34182C52627200C00C02292 /* UserSettings.swift */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30856A725F1BFC30031C393 /* ContentView.swift in Sources */,
+				F34182C62627200C00C02292 /* UserSettings.swift in Sources */,
 				F30856A525F1BFC30031C393 /* HelloSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
